@@ -1,0 +1,11 @@
+{
+  "name": "au-arrivals-pipeline",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Fetch + shape ABS Overseas Arrivals and Departures into the JSON the site reads.",
+  "scripts": {
+    "collect": "node collect.mjs",
+    "aggregate": "node aggregate.mjs"
+  }
+}

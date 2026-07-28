@@ -1,0 +1,26 @@
+Third-party notices — Overseas Arrivals (au-arrivals)
+
+Runtime components bundled into the deployed site (from the build source maps):
+
+- Leaflet 1.9.4 — BSD-2-Clause. Copyright (c) 2010-2023 Volodymyr Agafonkin;
+  Copyright (c) 2010-2011 CloudMade. Used for the world choropleth map.
+  Full licence text: THIRD-PARTY-NOTICES.md in the repository.
+
+Map tiles are served at runtime by CARTO (light basemap), not bundled, and are
+attributed on the map.
+
+Everything else is first-party TypeScript and hand-rolled SVG charts with system
+fonts only — no web fonts, no other bundled libraries. The build toolchain (Vite,
+TypeScript, Vitest, jsdom) runs only at build time and is NOT distributed.
+
+Boundary geometry:
+- Natural Earth 1:50m Admin-0 map units — public domain (credited on the map),
+  simplified with mapshaper in the data pipeline.
+
+Data sources (attribution required by their CC BY 4.0 licence):
+- Australian Bureau of Statistics — Overseas Arrivals and Departures, Australia
+  (dataflows OAD_COUNTRY and OAD_REASON), via data.api.abs.gov.au.
+  (c) Commonwealth of Australia, CC BY 4.0.
+
+Attribution is preserved in the site footer and About panel. This site is an
+independent project and is not affiliated with or endorsed by the ABS.
